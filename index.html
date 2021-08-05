@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <title>Creating Account</title>
+  </head>
+  <body>
+    <h1>Create An Account</h1>
+    <form>
+      <div>
+        <label for="input__first-name">Frist name</label>
+        <input
+          id="input__first-name"
+          type="text"
+          placeholder="First name"
+          required
+        />
+      </div>
+      <div>
+        <label for="input__last-name">Last name</label>
+        <input
+          id="input__last-name"
+          type="text"
+          placeholder="Last name"
+          required
+        />
+      </div>
+      <div>
+        <label for="input__email">Email</label>
+        <input id="input__email" type="email" placeholder="Email" required />
+      </div>
+      <div>
+        <label for="input__username">Username</label>
+        <input
+          id="input__username"
+          type="text"
+          placeholder="Username"
+          required
+        />
+      </div>
+      <div>
+        <label for="input__password">Password</label>
+        <input
+          id="input__password"
+          type="password"
+          placeholder="Password"
+          required
+          minlength="10"
+        />
+      </div>
+      <div>
+        <label for="input__birthdate">Birth date</label>
+        <input id="input__birthdate" type="date" required />
+      </div>
+      <div>
+        <label for="input__happiness">How happy are you?</label>
+        <span>😥</span>
+        <input
+          id="input__happiness"
+          type="range"
+          min="0"
+          max="10"
+          value="5"
+          list="happiness-status"
+        />
+        <span>😀</span>
+        <datalist id="happiness-status">
+          <option value="0" label="0">0</option>
+          <option value="1" label="10">1</option>
+          <option value="2" label="20">2</option>
+          <option value="3" label="30">3</option>
+          <option value="4" label="40">4</option>
+          <option value="5" label="50">5</option>
+          <option value="6" label="60">6</option>
+          <option value="7" label="70">7</option>
+          <option value="8" label="80">8</option>
+          <option value="9" label="90">9</option>
+          <option value="10" label="100">10</option>
+        </datalist>
+      </div>
+      <div>
+        <label for="input__fav-color">What is your favorite color?</label>
+        <input id="input__fav-color" type="color" />
+      </div>
+      <div>
+        <button>Create Account</button>
+      </div>
+    </form>
+  </body>
+</html>
