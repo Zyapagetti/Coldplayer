@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+
+@import "reset.css";
+@import "variables.css";
+
+@import "playlist.css";
+@import "big-player.css";
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-container {
+  width: 320px;
+  height: 750px;
+  border-radius: 40px;
+  background-color: whitesmoke;
+  padding: 25px;
+  box-shadow: 5px 5px 150px black, 12px 12px 5px black, -3px -3px 20px black;
+}
+
+.nav {
+  width: 100%;
+  justify-content: space-between;
+  margin: 15px 0 15px 0;
+  font-size: 20px;
+}
+
+.nav__btn {
+  cursor: pointer;
+}
+
+.nav__title {
+  font-size: 25px;
+}

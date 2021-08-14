@@ -1,93 +1,263 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/styles.css" />
-    <title>Creating Account</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>You Are Awesome!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <h1>Create An Account</h1>
-    <form>
-      <div>
-        <label for="input__first-name">Frist name</label>
-        <input
-          id="input__first-name"
-          type="text"
-          placeholder="First name"
-          required
-        />
+  <body class="flex-row" background="img/wood-background.jpg">
+    <div class="page__playlist main-container">
+      <div class="nav flex-row">
+        <div class="nav__btn back-btn"><i class="fas fa-arrow-left"></i></div>
+        <div class="nav__title">Playlist</div>
+        <div class="nav__btn search-btn"><i class="fas fa-search"></i></div>
       </div>
-      <div>
-        <label for="input__last-name">Last name</label>
-        <input
-          id="input__last-name"
-          type="text"
-          placeholder="Last name"
-          required
-        />
+
+      <div class="playlist">
+        <div class="playlist__info">
+          <div class="playlist__img">
+            <img src="img/coldplay.jpg" />
+          </div>
+          <div class="playlist__name">Coldplay</div>
+          <div class="playlist__tag">Pop, Rock</div>
+        </div>
+
+        <div class="playlist__mix flex-row">
+          <div class="playlist__shuffle-btn">Shuffle</div>
+          <div class="playlist__like-btn">
+            <i class="far fa-heart"></i>
+            <span>212,971</span>
+          </div>
+        </div>
+
+        <!-- 재생목록 -->
+        <div class="playlist__container">
+          <!-- 1번 -->
+          <a href="https://youtu.be/yKNxeF4KMsY" target="_blank">
+            <div class="playlist__music flex-row">
+              <div class="music__album-img">
+                <img src="img/parachutes.jpg" />
+              </div>
+              <div class="music__info-cover">
+                <div class="music__info">
+                  <div class="music__name">Yellow</div>
+                  <div class="music__artist">Coldplay</div>
+                </div>
+                <div class="music__menu"><i class="fas fa-ellipsis-v"></i></div>
+              </div>
+            </div>
+          </a>
+          <!-- 2번 -->
+          <a href="https://youtu.be/vGZMvV9KBp8" target="_blank">
+            <div class="playlist__music flex-row">
+              <div class="music__album-img">
+                <img src="img/adventure-of-a-lifetime.jpg" />
+              </div>
+              <div class="music__info-cover">
+                <div class="music__info">
+                  <div class="music__name">A Head Full Of Dreams</div>
+                  <div class="music__artist">Coldplay</div>
+                </div>
+                <div class="music__menu"><i class="fas fa-ellipsis-v"></i></div>
+              </div>
+            </div>
+          </a>
+          <!-- 3번 -->
+          <a href="https://youtu.be/Qtb11P1FWnc" target="_blank">
+            <div class="playlist__music flex-row">
+              <div class="music__album-img">
+                <img src="img/ghost-stories.jpg" />
+              </div>
+              <div class="music__info-cover">
+                <div class="music__info">
+                  <div class="music__name">Magic</div>
+                  <div class="music__artist">Coldplay</div>
+                </div>
+                <div class="music__menu"><i class="fas fa-ellipsis-v"></i></div>
+              </div>
+            </div>
+          </a>
+          <!-- 4번 -->
+          <a href="https://youtu.be/dvgZkm1xWPE" target="_blank">
+            <div class="playlist__music flex-row">
+              <div class="music__album-img">
+                <img src="img/viva-la-vida.jpg" />
+              </div>
+              <div class="music__info-cover">
+                <div class="music__info">
+                  <div class="music__name">Viva La Vida</div>
+                  <div class="music__artist">Coldplay</div>
+                </div>
+                <div class="music__menu"><i class="fas fa-ellipsis-v"></i></div>
+              </div>
+            </div>
+          </a>
+          <!-- 5번 -->
+          <a href="https://youtu.be/gnIZ7RMuLpU" target="_blank">
+            <div class="playlist__music flex-row">
+              <div class="music__album-img">
+                <img src="img/a-rush-of-blood-to-the-head.jpg" />
+              </div>
+              <div class="music__info-cover">
+                <div class="music__info">
+                  <div class="music__name">In My Place</div>
+                  <div class="music__artist">Coldplay</div>
+                </div>
+                <div class="music__menu"><i class="fas fa-ellipsis-v"></i></div>
+              </div>
+            </div>
+          </a>
+          <!-- 6번 -->
+          <a href="https://youtu.be/k4V3Mo61fJM" target="_blank">
+            <div class="playlist__music flex-row">
+              <div class="music__album-img">
+                <img src="img/x&y.png" />
+              </div>
+              <div class="music__info-cover">
+                <div class="music__info">
+                  <div class="music__name">Fix You</div>
+                  <div class="music__artist">Coldplay</div>
+                </div>
+                <div class="music__menu"><i class="fas fa-ellipsis-v"></i></div>
+              </div>
+            </div>
+          </a>
+          <!-- 7번 -->
+          <a href="https://youtu.be/1Uw6ZkbsAH8" target="_blank">
+            <div class="playlist__music flex-row">
+              <div class="music__album-img">
+                <img src="img/mylo-xyloto.jpg" />
+              </div>
+              <div class="music__info-cover">
+                <div class="music__info">
+                  <div class="music__name">Princess Of China</div>
+                  <div class="music__artist">Coldplay</div>
+                </div>
+                <div class="music__menu"><i class="fas fa-ellipsis-v"></i></div>
+              </div>
+            </div>
+          </a>
+          <!-- 8번 -->
+          <a href="https://youtu.be/ZJNG3WmsOs4" target="_blank">
+            <div class="playlist__music flex-row">
+              <div class="music__album-img">
+                <img src="img/everday-life.png" />
+              </div>
+              <div class="music__info-cover">
+                <div class="music__info">
+                  <div class="music__name">Arabesque</div>
+                  <div class="music__artist">Coldplay</div>
+                </div>
+                <div class="music__menu"><i class="fas fa-ellipsis-v"></i></div>
+              </div>
+            </div>
+          </a>
+          <!-- 9번 -->
+          <a href="https://youtu.be/xn_1hFdE-5g" target="_blank">
+            <div class="playlist__music flex-row">
+              <div class="music__album-img">
+                <img src="img/adventure-of-a-lifetime.jpg" />
+              </div>
+              <div class="music__info-cover">
+                <div class="music__info">
+                  <div class="music__name">Everglow</div>
+                  <div class="music__artist">Coldplay</div>
+                </div>
+                <div class="music__menu"><i class="fas fa-ellipsis-v"></i></div>
+              </div>
+            </div>
+          </a>
+          <!-- 10번 -->
+          <a href="https://youtu.be/3WOwa0lWEz4" target="_blank">
+            <div class="playlist__music flex-row">
+              <div class="music__album-img">
+                <img src="img/higher-power.png" />
+              </div>
+              <div class="music__info-cover">
+                <div class="music__info">
+                  <div class="music__name">Higher Power</div>
+                  <div class="music__artist">Coldplay</div>
+                </div>
+                <div class="music__menu"><i class="fas fa-ellipsis-v"></i></div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="mini-player flex-row">
+          <div class="mini-player__info-cover flex-row">
+            <div class="mini-player__img">
+              <img src="img/parachutes.jpg" />
+            </div>
+            <div class="mini-player__info">
+              <div class="mini-player__name">Yellow</div>
+              <div class="mini-player__artist">Coldplay</div>
+            </div>
+          </div>
+          <div class="mini-player__btns flex-row">
+            <div class="mini-player__previous-btn">
+              <i class="fas fa-step-backward"></i>
+            </div>
+            <div class="mini-player__pause-btn">
+              <i class="fas fa-grip-lines-vertical"></i>
+            </div>
+            <div class="mini-player__next-btn">
+              <i class="fas fa-step-forward"></i>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <label for="input__email">Email</label>
-        <input id="input__email" type="email" placeholder="Email" required />
+    </div>
+
+    <div class="page__big-player main-container">
+      <div class="nav flex-row">
+        <div class="nav__btn back-btn"><i class="fas fa-arrow-left"></i></div>
+        <div class="nav__title">Now Playing</div>
+        <div class="nav__btn menu-btn"><i class="fas fa-ellipsis-v"></i></div>
       </div>
-      <div>
-        <label for="input__username">Username</label>
-        <input
-          id="input__username"
-          type="text"
-          placeholder="Username"
-          required
-        />
+
+      <div class="big-player">
+        <div class="big-player__info">
+          <div class="big-player__album-img">
+            <img src="img/parachutes.jpg" />
+          </div>
+          <div class="big-player__name">Yellow</div>
+          <div class="big-player__artist">Coldplay</div>
+        </div>
+
+        <div class="big-player__playback">
+          <div class="playback__time flex-row">
+            <div class="playback__current-time">1:03</div>
+            <div class="playback__total-time">4:29</div>
+          </div>
+          <div class="playback__search-bar">
+            <input type="range" min="0" max="269" step="1" value="63" />
+          </div>
+        </div>
+
+        <div class="big-player__btns flex-row">
+          <div class="big-player__repeat-btn"><i class="fas fa-sync"></i></div>
+          <div class="big-player__previous-btn">
+            <i class="fas fa-step-backward"></i>
+          </div>
+          <div class="big-player__play-btn"><i class="fas fa-play"></i></div>
+          <div class="big-player__next-btn">
+            <i class="fas fa-step-forward"></i>
+          </div>
+          <div class="big-player__shuffle-btn">
+            <i class="fas fa-random"></i>
+          </div>
+        </div>
       </div>
-      <div>
-        <label for="input__password">Password</label>
-        <input
-          id="input__password"
-          type="password"
-          placeholder="Password"
-          required
-          minlength="10"
-        />
-      </div>
-      <div>
-        <label for="input__birthdate">Birth date</label>
-        <input id="input__birthdate" type="date" required />
-      </div>
-      <div>
-        <label for="input__happiness">How happy are you?</label>
-        <span>😥</span>
-        <input
-          id="input__happiness"
-          type="range"
-          min="0"
-          max="10"
-          value="5"
-          list="happiness-status"
-        />
-        <span>😀</span>
-        <datalist id="happiness-status">
-          <option value="0" label="0">0</option>
-          <option value="1" label="10">1</option>
-          <option value="2" label="20">2</option>
-          <option value="3" label="30">3</option>
-          <option value="4" label="40">4</option>
-          <option value="5" label="50">5</option>
-          <option value="6" label="60">6</option>
-          <option value="7" label="70">7</option>
-          <option value="8" label="80">8</option>
-          <option value="9" label="90">9</option>
-          <option value="10" label="100">10</option>
-        </datalist>
-      </div>
-      <div>
-        <label for="input__fav-color">What is your favorite color?</label>
-        <input id="input__fav-color" type="color" />
-      </div>
-      <div>
-        <button>Create Account</button>
-      </div>
-    </form>
+    </div>
   </body>
 </html>
